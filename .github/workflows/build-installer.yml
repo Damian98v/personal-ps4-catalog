@@ -16,6 +16,25 @@ jobs:
           repository: e1z0/PS4-Games-Installer
           ref: f9212596bafd1011aec594cd8c5bd0d05cff938a
           persist-credentials: false
+      - name: Check out catalog build fix
+        uses: actions/checkout@v4
+        with:
+          path: .catalog-build
+          persist-credentials: false
+      - name: Apply bounded response-header fix and record source
+        run: |
+          python3 .catalog-build/scripts/patch_installer_headers.py .
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('revision.json')
+          state = json.loads(p.read_text())
+          state['revision'] = 48
+          p.write_text(json.dumps(state, indent=2) + '\n')
+          PY
+          git add src/http.cpp src/http_native.hpp tests/http_native_test.cpp revision.json
+          git -c user.name='Catalog build' -c user.email='build@users.noreply.github.com' \
+            -c commit.gpgsign=false commit -m 'Allow bounded 64 KiB native HTTP response headers'
       - name: Build upstream toolchain image
         run: make image
       - name: Build and validate existing installer
@@ -78,11 +97,14 @@ jobs:
       - name: Include source and build provenance
         run: |
           git archive --format=tar.gz --output=dist/upstream-source.tar.gz HEAD
-          git rev-parse HEAD > dist/UPSTREAM_COMMIT.txt
-          printf '%s\n' 'Local build of unmodified e1z0/PS4-Games-Installer source.' \
+          printf '%s\n' f9212596bafd1011aec594cd8c5bd0d05cff938a > dist/UPSTREAM_COMMIT.txt
+          git rev-parse HEAD > dist/BUILD_COMMIT.txt
+          git show --format= HEAD -- src/http.cpp src/http_native.hpp tests/http_native_test.cpp revision.json > dist/installer-response-headers.patch
+          printf '%s\n' 'Local build of e1z0/PS4-Games-Installer with a bounded response-header fix.' \
             'Not an official upstream release. Hardware compatibility must be tested.' \
             'Built with the upstream Dockerfile, pinned OpenOrbis SDK and package validator.' \
-            'The PKG uses unmodified upstream source. host-test-harness.patch only adapts Linux test logging after packaging.' \
+            'Source archive includes the native header fix; installer-response-headers.patch records the production changes.' \
+            'host-test-harness.patch only adapts Linux test fixtures after packaging; those changes are not in the PS4 binary.' \
             > dist/BUILD-NOTES.txt
           sha256sum dist/*.pkg > dist/SHA256SUMS
       - uses: actions/upload-artifact@v4
