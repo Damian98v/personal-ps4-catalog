@@ -59,15 +59,20 @@ jobs:
               writeCa(letsEncryptCa + caOne, "build/host/letsencrypt-gen-y.pem");
           ''')
           fixture.write_text(text)
+          startup = Path('tests/startup_test.py')
+          text = startup.read_text()
+          old = '"godaddy-secure-g2.pem"):'
+          assert text.count(old) == 1
+          startup.write_text(text.replace(old, '"godaddy-secure-g2.pem", "letsencrypt-gen-y.pem"):'))
           PY
-          git diff -- src/log.cpp Makefile tests/http_native_test.cpp > dist/host-test-harness.patch
+          git diff -- src/log.cpp Makefile tests/http_native_test.cpp tests/startup_test.py > dist/host-test-harness.patch
       - name: Run upstream regression tests
         run: |
           docker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/work" \
             -e SDL_VIDEODRIVER=dummy -e PSGI_IN_CONTAINER=1 \
             ps4-games-installer:build make -j2 test
       - name: Restore exact package source before validation
-        run: git restore --source=HEAD -- src/log.cpp Makefile tests/http_native_test.cpp
+        run: git restore --source=HEAD -- src/log.cpp Makefile tests/http_native_test.cpp tests/startup_test.py
       - name: Verify package manifest
         run: make validate
       - name: Include source and build provenance
