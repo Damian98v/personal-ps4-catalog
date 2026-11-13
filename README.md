@@ -55,7 +55,7 @@ Apollo is een hulpmiddel, geen game; het staat in dezelfde lijst zodat één Gam
 
 ## Aangevraagde games
 
-De op 13 november 2026 opgegeven lijst bevat **31 unieke titels/bundels**. Vice City is ondergebracht bij GTA: The Trilogy; de gebruiker heeft bevestigd dat GTA V niet gewenst is. Voor alle 31 is een PS4-uitgave gevonden. Voor geen van deze aanvragen is in de geraadpleegde officiele bronnen een geautoriseerde openbare directe PS4-PKG-download gevonden. Er zijn dus geen nieuwe actieve items toegevoegd. De volledige onderzoeksgegevens staan in [missing.json](missing.json).
+De op 13 november 2026 opgegeven lijst bevat **31 unieke titels/bundels**. Vice City is ondergebracht bij GTA: The Trilogy; de gebruiker heeft bevestigd dat GTA V niet gewenst is. Voor alle 31 is een PS4-uitgave gevonden. Voor geen van deze aanvragen is tot nu toe een gecontroleerde, geautoriseerde directe PKG-download van de volledige basisgame gevonden. Er zijn dus geen nieuwe actieve items toegevoegd. De volledige onderzoeksgegevens staan in [missing.json](missing.json).
 
 | # | Titel / officiele PS4-bron | Directe PKG-bron |
 | --- | --- | --- |
@@ -92,6 +92,17 @@ De op 13 november 2026 opgegeven lijst bevat **31 unieke titels/bundels**. Vice 
 | 31 | [MX vs ATV Legends](https://store.playstation.com/en-us/concept/10000928/) | Nog nodig |
 
 The Sims 4 is als basisgame gratis via de PlayStation Store, maar een Store-vermelding is geen directe PKG-bron. De gecontroleerde Monopoly Plus-vermelding is momenteel niet te koop in die Store-regio. Proefversies, Friend Passes en alleen-PS5-packages gelden niet als de gevraagde volledige PS4-game. Beschikbaarheid van een PS4-uitgave bevestigt niet dat die op de firmware van de gebruiker werkt.
+
+### Aanvullende brede PKG-zoekronde
+
+Voor alle 31 titels is ook buiten de officiele winkels expliciet op PS4-PKG gezocht. Er bestaan derdenvermeldingen van volledige games, maar die zijn niet automatisch gecontroleerd of geautoriseerd. De eerdere uitkomst betekent dus niet dat er nergens PKG-vermeldingen bestaan. De concrete netwerkcontroles hebben twee echte bestanden op Sony's publieke downloadserver opgeleverd:
+
+| Titel | Gecontroleerd bestand | Bytes | Resultaat |
+| --- | --- | ---: | --- |
+| Assassin's Creed IV: Black Flag | Update 01.04, CUSA00009 | 2.313.158.656 | HTTP 206, geldige PS4-header/SFO, grootte en eindbyte gecontroleerd |
+| Monopoly Plus | Update 01.01, CUSA00773 | 515.309.568 | HTTP 206, geldige PS4-header/SFO, grootte en eindbyte gecontroleerd |
+
+De originele HTTP-links en de volledige controlebewijzen staan bij deze titels in missing.json. De HTTPS-variant van deze oudere Sony-host sloot de verbinding bij controle; de oorspronkelijke HTTP-links werken wel. Beide packages hebben SFO-categorie gp (patch), vereisen een passende basisgame/licentie en zijn geen vervanging voor een complete game. Ze zijn niet aan games.json toegevoegd. Installatie op de eigen PS4 is niet getest.
 
 ## Voortaan via Codex
 

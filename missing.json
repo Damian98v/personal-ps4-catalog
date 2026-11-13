@@ -123,9 +123,9 @@
       "platform": "PS4",
       "ps4_available": true,
       "status": "missing",
-      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "reason": "Een echte update-PKG op de officiele Sony-server is technisch gecontroleerd. Deze is geen volledige basisgame; daarvoor ontbreekt nog een gecontroleerde geautoriseerde bron.",
       "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
-      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "last_attempt": "2026-11-13T19:04:28+00:00",
       "request_batch": "2026-11-13-spoken-list",
       "list_order": 6,
       "package_url": null,
@@ -137,6 +137,34 @@
         {
           "url": "https://store.playstation.com/en-in/product/EP0001-CUSA00009_00-AC4GAMEPS4000001",
           "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ],
+      "update_candidates": [
+        {
+          "url": "http://gs2.ww.prod.dl.playstation.net/gs2/ppkgo/prod/CUSA00009_00/11/f_4db9903fa329af71cb38cda43ef1fa0c085983ac7b81edee80f01dfa588f2fd6/f/EP0001-CUSA00009_00-AC4GAMEPS4000001-A0104-V0100.pkg",
+          "package_type": "update",
+          "source": "Sony PlayStation public download server",
+          "base_game_required": true,
+          "base_title_id": "CUSA00009",
+          "verification": {
+            "status": "verified",
+            "checked_at": "2026-11-13T19:04:28+00:00",
+            "size": 2313158656,
+            "content_id": "EP0001-CUSA00009_00-AC4GAMEPS4000001",
+            "title_id": "CUSA00009",
+            "version": "01.04",
+            "min_fw": "1.52",
+            "head_status": 200,
+            "range_supported": true,
+            "resolved_host": "gs2.ww.prod.dl.playstation.net",
+            "header_sha256": "ed573206addee5d4a31199f12d9f2331c9eaa1333f542700892eeafcc52803fa",
+            "verification_scope": "Header, declared size, public SFO (when present), and final byte; not full-file integrity or hardware installation.",
+            "sfo_category": "gp",
+            "sfo_title": "Assassin's Creed® IV Black Flag"
+          },
+          "hardware_tested": false,
+          "installer_compatibility": "Alleen HTTP/PKG-structuur gecontroleerd. Retail-update; vereist bijpassende basisgame en licentie. Geen bevestigd PS4-installatieresultaat.",
+          "published_in_active_catalog": false
         }
       ]
     },
@@ -586,9 +614,9 @@
       "platform": "PS4",
       "ps4_available": true,
       "status": "missing",
-      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "reason": "Een echte update-PKG op de officiele Sony-server is technisch gecontroleerd. Deze is geen volledige basisgame; daarvoor ontbreekt nog een gecontroleerde geautoriseerde bron.",
       "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
-      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "last_attempt": "2026-11-13T19:04:29+00:00",
       "request_batch": "2026-11-13-spoken-list",
       "list_order": 27,
       "package_url": null,
@@ -600,6 +628,34 @@
         {
           "url": "https://store.playstation.com/en-us/concept/202832",
           "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ],
+      "update_candidates": [
+        {
+          "url": "http://gs2.ww.prod.dl.playstation.net/gs2/ppkgo/prod/CUSA00773_00/1/f_22a67cc81f03908e4e44f56fcf1cd4b89a6f6f20f12fb9a0a45cd8813d7f8e5e/f/EP0001-CUSA00773_00-ASOBOMONOPOLY000-A0101-V0100.pkg",
+          "package_type": "update",
+          "source": "Sony PlayStation public download server",
+          "base_game_required": true,
+          "base_title_id": "CUSA00773",
+          "verification": {
+            "status": "verified",
+            "checked_at": "2026-11-13T19:04:29+00:00",
+            "size": 515309568,
+            "content_id": "EP0001-CUSA00773_00-ASOBOMONOPOLY000",
+            "title_id": "CUSA00773",
+            "version": "01.01",
+            "min_fw": "1.76",
+            "head_status": 200,
+            "range_supported": true,
+            "resolved_host": "gs2.ww.prod.dl.playstation.net",
+            "header_sha256": "280796996915d7ec88109411a285fb1017f8befdd76d4693ae9b0ab203307358",
+            "verification_scope": "Header, declared size, public SFO (when present), and final byte; not full-file integrity or hardware installation.",
+            "sfo_category": "gp",
+            "sfo_title": "MONOPOLY PLUS"
+          },
+          "hardware_tested": false,
+          "installer_compatibility": "Alleen HTTP/PKG-structuur gecontroleerd. Retail-update; vereist bijpassende basisgame en licentie. Geen bevestigd PS4-installatieresultaat.",
+          "published_in_active_catalog": false
         }
       ]
     },
@@ -691,5 +747,20 @@
         }
       ]
     }
-  ]
+  ],
+  "latest_extended_search": {
+    "checked_at": "2026-11-13T19:05:29+00:00",
+    "title_queries_executed": 31,
+    "scope": "Per aangevraagde titel breed op internet gezocht met PS4 en PKG, inclusief derdepartijen. Zoekvermeldingen zijn geen geverifieerde downloads of bewijs van distributietoestemming.",
+    "verified_full_game_packages": 0,
+    "verified_official_update_packages": 2,
+    "result_categories": [
+      "derdenvermeldingen van basisgames",
+      "torrents",
+      "RAR-archieven en opgesplitste bestanden",
+      "mod-/cheatbestanden en verkeerde edities",
+      "officiele Sony-updates"
+    ],
+    "note": "Onbekende derdenbronnen zijn niet automatisch goedgekeurd of aan de actieve catalogus toegevoegd. Twee officiele updatebestanden zijn met begrensde HTTP-probes geverifieerd."
+  }
 }
