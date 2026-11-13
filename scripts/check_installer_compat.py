@@ -26,7 +26,6 @@ int main(int argc, char** argv) {
   std::string text((std::istreambuf_iterator<char>(input)), {});
   try {
     auto entries = psgi::parseCatalog(text, "games");
-    if (entries.empty()) return 2;
     std::cout << "Upstream PS4 Games Installer accepted " << entries.size() << " packages\\n";
   } catch (const std::exception& e) { std::cerr << e.what(); return 1; }
 }

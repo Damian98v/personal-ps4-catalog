@@ -15,7 +15,7 @@ https://damian98v.github.io/personal-ps4-catalog/games.json
 2. Ga naar **OPTIONS → Settings → Games JSON URL** en vul bovenstaande URL exact in.
 3. Kies **Test connection**, daarna **Save settings**.
 4. Kies **OPTIONS → Refresh library**. Open **Available** (L1/R1 wisselt Installed/Available).
-5. Selecteer **PS4 2048** en druk **X** om de installatie te bevestigen.
+5. Selecteer een beschikbare game en druk **X** om de installatie te bevestigen. De catalogus is momenteel leeg na verwijdering van de testitems.
 6. Bekijk de voortgang onder **OPTIONS → Downloads**. Wacht op **Completed**.
 
 De PS4 heeft internet nodig en moet zowel GitHub Pages als GitHub releasebestanden kunnen bereiken.
@@ -39,7 +39,9 @@ Deze build doorstond de volledige C++-/HTTP-testreeks en alle 19 Python-tests me
 
 **Gebruik r49:** [geslaagde build en download](https://github.com/Damian98v/personal-ps4-catalog/actions/runs/43465027590), artifact `ps4-installer-https-fixes`, installatiebestand `PS4Game_installer-r49.pkg` (6.619.136 bytes). Appversie `00.49`, Title ID `PGIN00001`; SHA-256 `3f7295b3476da0fce97b3c909205607490c8aaab1984bf404a731b4a31118bb2`. Native HTTP-regressies inclusief grote redirectheaders, de overige C++-tests, HTTP-integratietests en alle 19 Python-tests slagen. Installeer als app-update, open Downloads en probeer PS4 2048 opnieuw met X. Succes op de eigen PS4 is nog niet bevestigd.
 
-## Eerste inhoud
+## Eerste testitems (verwijderd)
+
+PS4 2048 en Apollo Save Tool zijn op verzoek uit de actieve catalogus verwijderd. `games.json` bevat momenteel een geldig leeg DATA-object. Hieronder staan alleen de historische testgegevens; verwijderen uit de catalogus verwijdert geen app op de PS4.
 
 | Package | Packageversie | Grootte | Functie |
 | --- | --- | ---: | --- |
