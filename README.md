@@ -31,6 +31,10 @@ Bij `Send request … Check the JSON endpoint` ondanks werkend internet: control
 De handmatige Actions-workflow `Build installer with upstream HTTPS fixes` bouwt de ongewijzigde officiële broncode op revisie `f9212596bafd1011aec594cd8c5bd0d05cff938a`, draait upstreamtests en valideert het package. Dit is een eigen build van de bestaande app, geen officiële upstreamrelease; werking op de eigen PS4 moet nog worden getest. Het downloadbare artifact bevat het PKG, checksum, buildmanifest en de bijbehorende upstreambroncode.
 De ongewijzigde upstream pc-tests hebben loggingproblemen en verouderde certificaatfixtures: een PS4-functie wordt in de hostfallback aangeroepen, de native HTTP-test linkt de logger niet en de HTTP-/opstartfixtures verwachten nog geen Let's Encrypt-certificaat. Alleen voor de pc-tests wordt dit na packaging aangepast; de patch wordt bijgeleverd en vóór packagehercontrole teruggedraaid. De PS4-binary bevat deze testaanpassingen niet.
 
+**Build r48 is beschikbaar:** de [geslaagde build en download](https://github.com/Damian98v/personal-ps4-catalog/actions/runs/43461192199) bevat het artifact `ps4-installer-https-fixes` (30 dagen bewaard). Pak het ZIP-bestand uit en gebruik uitsluitend `PS4Game_installer-r48.pkg` als installatiebestand; de overige bestanden bevatten broncode, controles en herkomst.
+Sluit de bestaande installer en installeer het PKG als app-update via je gebruikelijke PKG-installatiemethode (bijvoorbeeld USB of FTP). Verwijder de bestaande app niet vooraf. De Title ID blijft `PGIN00001`; packageversie is `00.48`. Open daarna de installer, bevestig bovenstaande Games JSON URL en gebruik Test connection, Save settings en Refresh library.
+Deze build doorstond de volledige C++-/HTTP-testreeks en alle 19 Python-tests met de bijgeleverde host-testaanpassingen. Het package is opnieuw gevalideerd na herstel van de oorspronkelijke broncode. SHA-256: `d705be59668ac468dfb4360b9cd051f2ef7c280d5e12f83b41cb49841b54af37`. Installatie en verbinding op de eigen fysieke PS4 zijn nog niet bevestigd.
+
 ## Eerste inhoud
 
 | Package | Packageversie | Grootte | Functie |
