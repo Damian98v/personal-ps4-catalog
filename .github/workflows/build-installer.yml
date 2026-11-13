@@ -1,0 +1,44 @@
+name: Build installer with upstream HTTPS fixes
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out unmodified official source
+        uses: actions/checkout@v4
+        with:
+          repository: e1z0/PS4-Games-Installer
+          ref: f9212596bafd1011aec594cd8c5bd0d05cff938a
+          persist-credentials: false
+      - name: Build upstream toolchain image
+        run: make image
+      - name: Build and validate existing installer
+        run: make package
+      - name: Run upstream regression tests
+        run: |
+          docker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/work" \
+            -e SDL_VIDEODRIVER=dummy -e PSGI_IN_CONTAINER=1 \
+            ps4-games-installer:build make -j2 test
+      - name: Verify package manifest
+        run: make validate
+      - name: Include source and build provenance
+        run: |
+          git archive --format=tar.gz --output=dist/upstream-source.tar.gz HEAD
+          git rev-parse HEAD > dist/UPSTREAM_COMMIT.txt
+          printf '%s\n' 'Local build of unmodified e1z0/PS4-Games-Installer source.' \
+            'Not an official upstream release. Hardware compatibility must be tested.' \
+            'Built with the upstream Dockerfile, pinned OpenOrbis SDK and package validator.' \
+            > dist/BUILD-NOTES.txt
+          sha256sum dist/*.pkg > dist/SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ps4-installer-https-fixes
+          path: dist/
+          retention-days: 30
+          if-no-files-found: error

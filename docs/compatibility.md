@@ -27,6 +27,12 @@ PKG-Zone-downloads voor 2048 en Mandelbrot Zoom gaven bij anonieme Range-request
 
 De controles bewijzen het formaat en bereikbaarheid vanaf de testmachine/CI. Het gedrag op de eigen PS4, firmware/TLS-compatibiliteit, volledige package-integriteit en succesvolle installatie vereisen een hardwaretest.
 
+## Verschil tussen officiële release r40 en huidige broncode
+
+Tijdens de hardwareconfiguratie meldde de gebruiker appversie **r40**, een werkende algemene internettest en blijvende `Send request`-fouten bij de catalogus. De exacte foutcode is nog niet beschikbaar.
+De [vergelijking r40 met main](https://github.com/e1z0/PS4-Games-Installer/compare/r40...f9212596bafd1011aec594cd8c5bd0d05cff938a) toont dat algemene HTTPS-/redirectreparaties, de gebundelde certificaten en extra TLS-diagnostiek pas na r40 zijn toegevoegd. r40 blijft op dit moment de nieuwste officiële release. HTTPS-compatibiliteit met de actuele GitHub-hosts mag daarom niet op basis van de nieuwste README voor r40 worden aangenomen.
+Dit is een waarschijnlijke verklaring, geen bewezen diagnose zonder foutcode en hertest. De manual-only buildworkflow maakt een package van de bestaande ongewijzigde upstreambroncode met deze reparaties; een systeemfirmware-update is hiervoor niet nodig.
+
 ## Uitgevoerde MVP-controles
 
 De eerste [GitHub Actions-run](https://github.com/Damian98v/personal-ps4-catalog/actions/runs/43442818297) is geslaagd. De originele C++-parser rapporteerde `Upstream PS4 Games Installer accepted 2 packages`. Pages is gepubliceerd en de publieke JSON is via anonieme HTTPS GET byte-inhoudelijk als JSON vergeleken met het lokale catalogusobject.

@@ -24,6 +24,12 @@ HTTPS-packages worden door de installer eerst naar interne opslag gedownload. Ho
 
 **De catalogus is op afstand getest; een installatie op fysieke PS4-hardware is niet door Codex uitgevoerd.**
 
+### Bekend probleem met installer r40
+
+De nieuwste officiële download is momenteel r40. De gebundelde certificaten en algemene HTTPS-reparaties zijn echter pas **na r40** aan de officiële broncode toegevoegd. Een geslaagde catalogusparsertest op de computer bewijst daarom niet dat de r40-app GitHub via HTTPS kan bereiken.
+Bij `Send request … Check the JSON endpoint` ondanks werkend internet: controleer de appversie (OPTIONS → About), volledige foutcode en PS4-klok. De gebruiker heeft deze fout met r40 gemeld. Pas hiervoor niet de PS4-systeemsoftware aan.
+De handmatige Actions-workflow `Build installer with upstream HTTPS fixes` bouwt de ongewijzigde officiële broncode op revisie `f9212596bafd1011aec594cd8c5bd0d05cff938a`, draait upstreamtests en valideert het package. Dit is een eigen build van de bestaande app, geen officiële upstreamrelease; werking op de eigen PS4 moet nog worden getest. Het downloadbare artifact bevat het PKG, checksum, buildmanifest en de bijbehorende upstreambroncode.
+
 ## Eerste inhoud
 
 | Package | Packageversie | Grootte | Functie |
