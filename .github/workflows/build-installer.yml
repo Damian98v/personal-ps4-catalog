@@ -40,15 +40,34 @@ jobs:
           else:
               raise RuntimeError('Upstream native HTTP test target missing')
           makefile.write_text('\n'.join(lines) + '\n')
+          import re
+          fixture = Path('tests/http_native_test.cpp')
+          text = fixture.read_text()
+          text = text.replace('const std::string caOne =', 'const std::string letsEncryptCa = "-----BEGIN CERTIFICATE-----\\r\\nRA==\\r\\n-----END CERTIFICATE-----\\r\\n";\nconst std::string caOne =')
+          text = re.sub(r'(retainedCaList|certificates)\[(\d+)\]', lambda m: m[1] + '[' + str(int(m[2]) + 1) + ']', text)
+          text = text.replace('assert(count == 3', 'assert(count == 4')
+          text = text.replace('ca=3', 'ca=4')
+          text = text.replace('    assert(std::string(retainedCaList[1]', '    assert(std::string(retainedCaList[0]->ptr, retainedCaList[0]->size) == letsEncryptCa);\n    assert(std::string(retainedCaList[1]', 1)
+          text = text.replace('    assert(std::string(certificates[1]', '    assert(std::string(certificates[0]->ptr, certificates[0]->size) == letsEncryptCa);\n    assert(std::string(certificates[1]', 1)
+          old = '    writeCa(intermediateCa, intermediatePath);'
+          assert text.count(old) == 1
+          text = text.replace(old, old + '''
+              std::remove("build/host/letsencrypt-gen-y.pem");
+              rejects([&] { psgi::prepareHttpTrust(); }, "Cannot open"); networkReleased();
+              writeCa(letsEncryptCa, "build/host/letsencrypt-gen-y.pem");
+              rejects([&] { psgi::prepareHttpTrust(); }, "Expected two"); networkReleased();
+              writeCa(letsEncryptCa + caOne, "build/host/letsencrypt-gen-y.pem");
+          ''')
+          fixture.write_text(text)
           PY
-          git diff -- src/log.cpp Makefile > dist/host-test-harness.patch
+          git diff -- src/log.cpp Makefile tests/http_native_test.cpp > dist/host-test-harness.patch
       - name: Run upstream regression tests
         run: |
           docker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/work" \
             -e SDL_VIDEODRIVER=dummy -e PSGI_IN_CONTAINER=1 \
             ps4-games-installer:build make -j2 test
       - name: Restore exact package source before validation
-        run: git restore --source=HEAD -- src/log.cpp Makefile
+        run: git restore --source=HEAD -- src/log.cpp Makefile tests/http_native_test.cpp
       - name: Verify package manifest
         run: make validate
       - name: Include source and build provenance
