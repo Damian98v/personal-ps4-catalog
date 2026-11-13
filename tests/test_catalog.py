@@ -111,13 +111,28 @@ class CatalogTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.root = Path(self.tmp.name)
-        for name in ['games.json', 'research.json', 'sources.json', 'missing.json']:
-            (self.root / name).write_bytes((catalog.ROOT / name).read_bytes())
+        # Independent fixtures: removing/adding real games must not break the test suite.
+        url = 'https://github.com/example/test/releases/download/v1/fixture.pkg'
+        identity = 'IV0000-TEST00001_00-TESTPACKAGE00000'
+        source = {'id': 'fixture', 'name': 'Test Homebrew', 'aliases': ['fixture'],
+                  'repo': 'example/test', 'standalone': True,
+                  'authorization_url': 'https://github.com/example/test',
+                  'authorization': 'Synthetic unit-test fixture only', 'reviewed_on': '2026-11-13'}
+        item = {'name': 'Test Homebrew', 'size': 8192, 'title_id': 'TEST00001',
+                'content_id': identity, 'version': '1.00', 'package_type': 'game'}
+        evidence = {'status': 'verified', 'checked_at': catalog.now(), 'range_supported': True,
+                    'size': 8192, 'title_id': 'TEST00001', 'content_id': identity}
+        for name, value in [('games.json', {'DATA': {url: item}}),
+                            ('sources.json', {'sources': [source]}),
+                            ('research.json', {'packages': {url: {'source_id': 'fixture', 'verification': evidence}}}),
+                            ('missing.json', {'requests': []})]:
+            catalog.write_json(self.root / name, value)
 
     def tearDown(self):
         self.tmp.cleanup()
 
     def test_real_catalog(self):
+        catalog.validate()
         catalog.validate(self.root)
 
     def test_duplicate_json_keys(self):
@@ -135,7 +150,7 @@ class CatalogTests(unittest.TestCase):
         g = catalog.read_json(self.root / 'games.json')
         r = catalog.read_json(self.root / 'research.json')
         url, item = next(iter(g['DATA'].items()))
-        moved = url.replace('/v1.0/', '/other/')
+        moved = url.replace('/v1/', '/other/')
         g['DATA'][moved] = copy.deepcopy(item)
         r['packages'][moved] = copy.deepcopy(r['packages'][url])
         catalog.write_json(self.root / 'games.json', g)
@@ -159,8 +174,9 @@ class CatalogTests(unittest.TestCase):
 
     def test_add_idempotent(self):
         before = (self.root / 'games.json').read_bytes()
-        with patch.object(add_games, 'ROOT', self.root), patch.object(add_games, 'validate', wraps=lambda root=self.root: catalog.validate(root)):
-            self.assertEqual(add_games.add(['2048']), 0)
+        url = next(iter(catalog.read_json(self.root / 'games.json')['DATA']))
+        with patch.object(add_games, 'ROOT', self.root), patch.object(add_games, 'validate', wraps=lambda root=self.root: catalog.validate(root)), patch.object(add_games, 'release_candidates', return_value=({}, {'browser_download_url': url})):
+            self.assertEqual(add_games.add(['fixture']), 0)
         self.assertEqual(before, (self.root / 'games.json').read_bytes())
 
     def test_unknown_name_recorded_once(self):
@@ -168,7 +184,23 @@ class CatalogTests(unittest.TestCase):
             for _ in range(2):
                 self.assertEqual(add_games.add(['Unknown commercial game']), 1)
         self.assertEqual(len(catalog.read_json(self.root / 'missing.json')['requests']), 1)
+        self.assertEqual(len(catalog.read_json(self.root / 'games.json')['DATA']), 1)
+
+    def test_new_direct_package_is_added_after_probe(self):
+        source = {'id': 'direct', 'name': 'Direct Homebrew', 'allowed_urls': ['https://example.org/test.pkg'],
+                  'standalone': True, 'authorization_url': 'https://example.org',
+                  'authorization': 'Synthetic authorized fixture', 'reviewed_on': '2026-11-13'}
+        sources = catalog.read_json(self.root / 'sources.json')
+        sources['sources'].append(source)
+        catalog.write_json(self.root / 'sources.json', sources)
+        evidence = {'status': 'verified', 'checked_at': catalog.now(), 'range_supported': True,
+                    'size': 12288, 'title_id': 'TEST00002', 'version': '1.01', 'min_fw': None,
+                    'content_id': 'IV0000-TEST00002_00-TESTPACKAGE00000'}
+        with patch.object(add_games, 'ROOT', self.root), patch.object(add_games, 'validate', wraps=lambda root=self.root: catalog.validate(root)), patch.object(add_games, 'probe', return_value=evidence) as probe:
+            self.assertEqual(add_games.add(['Direct Homebrew'], source_id='direct', direct_url='https://example.org/test.pkg'), 0)
+            probe.assert_called_once()
         self.assertEqual(len(catalog.read_json(self.root / 'games.json')['DATA']), 2)
+        catalog.validate(self.root)
 
     def test_source_scope(self):
         source = catalog.read_json(self.root / 'sources.json')['sources'][0]

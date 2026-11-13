@@ -26,3 +26,9 @@ Aanvullend onderzocht: [Brewology games](https://store.brewology.com/ps4/games/)
 PKG-Zone-downloads voor 2048 en Mandelbrot Zoom gaven bij anonieme Range-requests HTTP 403 en zijn niet opgenomen. De catalogus claimt niet de nieuwere PKG-Zone-versie van 2048 te bevatten.
 
 De controles bewijzen het formaat en bereikbaarheid vanaf de testmachine/CI. Het gedrag op de eigen PS4, firmware/TLS-compatibiliteit, volledige package-integriteit en succesvolle installatie vereisen een hardwaretest.
+
+## Uitgevoerde MVP-controles
+
+De eerste [GitHub Actions-run](https://github.com/Damian98v/personal-ps4-catalog/actions/runs/43442818297) is geslaagd. De originele C++-parser rapporteerde `Upstream PS4 Games Installer accepted 2 packages`. Pages is gepubliceerd en de publieke JSON is via anonieme HTTPS GET byte-inhoudelijk als JSON vergeleken met het lokale catalogusobject.
+De packageprobes zijn voor beide releases uitgevoerd (anonieme HEAD, correcte Range-responses, PS4-signatuur, grootte, SFO en laatste byte). Beide covers geven HTTP 200 en zijn PNG-bestanden van 512 × 512 pixels.
+Herhaald toevoegen van dezelfde twee namen liet Git-status ongewijzigd. De Python-tests gebruiken afzonderlijke fixtures zodat latere toevoegingen of verwijderingen van echte games de tests niet veranderen.
