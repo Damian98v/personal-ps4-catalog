@@ -1,0 +1,46 @@
+{
+  "packages": {
+    "https://github.com/skidgfx/PS4-2048/releases/download/v1.0/IV0000-SKID02048_00-GAME204800000000.pkg": {
+      "source_id": "ps4-2048",
+      "kind": "homebrew",
+      "release_url": "https://github.com/skidgfx/PS4-2048/releases/tag/v1.0",
+      "release_tag": "v1.0",
+      "requirements": [],
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-13T14:26:19+00:00",
+        "size": 35454976,
+        "content_id": "IV0000-SKID02048_00-GAME204800000000",
+        "title_id": "SKID02048",
+        "version": "1.00",
+        "min_fw": null,
+        "head_status": 200,
+        "range_supported": true,
+        "resolved_host": "release-assets.githubusercontent.com",
+        "header_sha256": "726f9e622c1beb4aa58e48d2d9b8eb16799fbcf6f0606af4ffd88e292db9c17b",
+        "verification_scope": "Header, declared size, public SFO (when present), and final byte; not full-file integrity or hardware installation."
+      }
+    },
+    "https://github.com/bucanero/apollo-ps4/releases/download/v2.4.0/IV0000-APOL00004_00-APOLLO0000000PS4.pkg": {
+      "source_id": "apollo",
+      "kind": "homebrew",
+      "release_url": "https://github.com/bucanero/apollo-ps4/releases/tag/v2.4.0",
+      "release_tag": "v2.4.0",
+      "requirements": [],
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-13T14:26:20+00:00",
+        "size": 22806528,
+        "content_id": "IV0000-APOL00004_00-APOLLO0000000PS4",
+        "title_id": "APOL00004",
+        "version": "02.40",
+        "min_fw": null,
+        "head_status": 200,
+        "range_supported": true,
+        "resolved_host": "release-assets.githubusercontent.com",
+        "header_sha256": "5be45dbf302b1b5219db21cefdc6ef5dc615d72a78f80a968059e2509fdc0584",
+        "verification_scope": "Header, declared size, public SFO (when present), and final byte; not full-file integrity or hardware installation."
+      }
+    }
+  }
+}

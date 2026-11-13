@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "id": "ps4-2048",
+      "name": "PS4 2048",
+      "aliases": ["2048", "2048 Game (PS4 Native)"],
+      "repo": "skidgfx/PS4-2048",
+      "asset_pattern": "*.pkg",
+      "authorization_url": "https://github.com/skidgfx/PS4-2048/releases/tag/v1.0",
+      "authorization": "Original developer publishes a standalone PS4 game as a public release. Link only; no redistribution.",
+      "reviewed_on": "2026-11-13",
+      "standalone": true,
+      "kind": "homebrew",
+      "package_type": "game",
+      "min_fw": null,
+      "cover_url": "https://raw.githubusercontent.com/skidgfx/PS4-2048/master/sce_sys/icon0.png",
+      "description": "2048 puzzelspel voor PS4. Deze GitHub-release heeft geen audio en bewaart de topscore niet na afsluiten."
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo Save Tool",
+      "aliases": ["Apollo", "Apollo PS4"],
+      "repo": "bucanero/apollo-ps4",
+      "asset_pattern": "*.pkg",
+      "authorization_url": "https://github.com/bucanero/apollo-ps4",
+      "authorization": "Official open-source developer repository and public PS4 releases. Link only; no redistribution.",
+      "reviewed_on": "2026-11-13",
+      "standalone": true,
+      "kind": "homebrew",
+      "package_type": "game",
+      "min_fw": null,
+      "cover_url": "https://raw.githubusercontent.com/bucanero/apollo-ps4/main/sce_sys/icon0.png",
+      "description": "Homebrewprogramma voor het beheren van je eigen savegames. Dit is een hulpmiddel, geen game."
+    }
+  ]
+}
