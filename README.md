@@ -53,6 +53,46 @@ Beide komen rechtstreeks van de ontwikkelaars en hebben geen commerciële gamebe
 De GitHub-release van 2048 is ouder dan de PKG-Zone-versie. PKG-Zone gaf tijdens de downloadcontrole HTTP 403 en is niet als werkende bron toegevoegd.
 Apollo is een hulpmiddel, geen game; het staat in dezelfde lijst zodat één Games JSON URL volstaat.
 
+## Aangevraagde games
+
+De op 13 november 2026 opgegeven lijst bevat **31 unieke titels/bundels**. Vice City is ondergebracht bij GTA: The Trilogy; de gebruiker heeft bevestigd dat GTA V niet gewenst is. Voor alle 31 is een PS4-uitgave gevonden. Voor geen van deze aanvragen is in de geraadpleegde officiele bronnen een geautoriseerde openbare directe PS4-PKG-download gevonden. Er zijn dus geen nieuwe actieve items toegevoegd. De volledige onderzoeksgegevens staan in [missing.json](missing.json).
+
+| # | Titel / officiele PS4-bron | Directe PKG-bron |
+| --- | --- | --- |
+| 1 | [Uncharted 4: A Thief's End](https://www.playstation.com/en-us/games/uncharted-4-a-thiefs-end/) | Nog nodig |
+| 2 | [Call of Duty: Modern Warfare 2 Campaign Remastered](https://www.playstation.com/en-us/games/call-of-duty-modern-warfare-2-campaign-remastered/) | Nog nodig |
+| 3 | [Marvel's Spider-Man](https://www.playstation.com/en-us/games/marvels-spider-man/) | Nog nodig |
+| 4 | [Crash Bandicoot N. Sane Trilogy](https://www.playstation.com/en-us/games/crash-bandicoot-n-sane-trilogy/) | Nog nodig |
+| 5 | [Grand Theft Auto: The Trilogy - The Definitive Edition](https://www.playstation.com/nl-nl/games/grand-theft-auto-trilogy-definitive-edition/) | Nog nodig |
+| 6 | [Assassin's Creed IV: Black Flag](https://store.playstation.com/en-in/product/EP0001-CUSA00009_00-AC4GAMEPS4000001) | Nog nodig |
+| 7 | [It Takes Two](https://www.playstation.com/en-us/games/it-takes-two/) | Nog nodig |
+| 8 | [A Way Out](https://www.playstation.com/en-us/games/a-way-out/) | Nog nodig |
+| 9 | [Gang Beasts](https://store.playstation.com/en-us/product/UP2154-CUSA04794_00-GANGBEASTSPS04NA) | Nog nodig |
+| 10 | [Far Cry 3 Classic Edition](https://www.playstation.com/en-us/games/far-cry-3-classic-edition/) | Nog nodig |
+| 11 | [The Witcher 3: Wild Hunt - Complete Edition](https://store.playstation.com/en-us/concept/204794) | Nog nodig |
+| 12 | [Outlast](https://www.playstation.com/en-us/games/outlast/) | Nog nodig |
+| 13 | [The Sims 4](https://www.playstation.com/en-us/games/the-sims-4/) | Nog nodig |
+| 14 | [Stardew Valley](https://store.playstation.com/en-us/product/UP2456-CUSA06840_00-STARDEW00000SIEA) | Nog nodig |
+| 15 | [Assassin's Creed Origins](https://store.playstation.com/en-us/product/UP0001-CUSA05855_00-GAMEACEMPIRE0000) | Nog nodig |
+| 16 | [Far Cry 5](https://store.playstation.com/en-us/product/UP0001-CUSA05904_00-FARCRY5GAME00000) | Nog nodig |
+| 17 | [Star Wars Jedi: Fallen Order](https://www.playstation.com/en-us/games/star-wars-jedi-fallen-order/) | Nog nodig |
+| 18 | [Until Dawn](https://store.playstation.com/en-us/product/UP9000-CUSA00359_00-UNTILDAWN0000001) | Nog nodig |
+| 19 | [Assassin's Creed: The Ezio Collection](https://www.playstation.com/en-ph/games/assassins-creed-the-ezio-collection/) | Nog nodig |
+| 20 | [Spyro Reignited Trilogy](https://www.playstation.com/en-us/games/spyro-reignited-trilogy/) | Nog nodig |
+| 21 | [Assassin's Creed Odyssey](https://www.playstation.com/en-us/games/assassins-creed-odyssey/) | Nog nodig |
+| 22 | [South Park: The Fractured But Whole](https://www.playstation.com/en-us/games/south-park-the-fractured-but-whole/) | Nog nodig |
+| 23 | [Dying Light 2 Stay Human](https://www.playstation.com/en-us/games/dying-light-2-stay-human/) | Nog nodig |
+| 24 | [Dead Island 2](https://store.playstation.com/en-us/product/UP2047-CUSA01014_00-DI2MAINSIEAPS400) | Nog nodig |
+| 25 | [Middle-earth: Shadow of Mordor](https://store.playstation.com/en-sa/product/EP1018-CUSA00053_00-SHADOWOFMORDOR01) | Nog nodig |
+| 26 | [LEGO Jurassic World](https://www.playstation.com/en-us/games/lego-jurassic-world/) | Nog nodig |
+| 27 | [Monopoly Plus](https://store.playstation.com/en-us/concept/202832) | Nog nodig |
+| 28 | [Heavy Rain](https://www.playstation.com/en-us/games/heavy-rain/) | Nog nodig |
+| 29 | [South Park: The Stick of Truth](https://www.playstation.com/en-ph/games/south-park-the-stick-of-truth/) | Nog nodig |
+| 30 | [Star Wars Battlefront](https://store.playstation.com/en-us/product/UP0006-CUSA00640_00-BATTLEFRONT00000) | Nog nodig |
+| 31 | [MX vs ATV Legends](https://store.playstation.com/en-us/concept/10000928/) | Nog nodig |
+
+The Sims 4 is als basisgame gratis via de PlayStation Store, maar een Store-vermelding is geen directe PKG-bron. De gecontroleerde Monopoly Plus-vermelding is momenteel niet te koop in die Store-regio. Proefversies, Friend Passes en alleen-PS5-packages gelden niet als de gevraagde volledige PS4-game. Beschikbaarheid van een PS4-uitgave bevestigt niet dat die op de firmware van de gebruiker werkt.
+
 ## Voortaan via Codex
 
 Open deze repository als project in Codex en zeg bijvoorbeeld:

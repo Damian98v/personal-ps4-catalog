@@ -1,23 +1,693 @@
 {
   "requests": [
     {
-      "name": "Grand Theft Auto: Vice City – The Definitive Edition",
-      "status": "missing",
-      "reason": "Geen openbare, geautoriseerde directe PS4-PKG-download gevonden bij de onderzochte officiele Rockstar- en PlayStation-bronnen. De product-/winkelpagina is geen rechtstreeks PKG-bestand voor PS4 Games Installer.",
-      "last_attempt": "2026-11-13T16:28:16+00:00",
-      "needed": "Een eigen of door de rechthebbende geautoriseerde directe PS4-PKG-URL, met bron/toestemming. Daarna volgen bereikbaarheid-, Range-, header- en metadata-controles.",
-      "requested_as": "Gta vice city definitive edition",
+      "name": "Uncharted 4: A Thief's End",
       "platform": "PS4",
       "ps4_available": true,
-      "official_bundle": "Grand Theft Auto: The Trilogy - The Definitive Edition",
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 1,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-uitgave; niet de PS5/PC Legacy of Thieves Collection.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/uncharted-4-a-thiefs-end/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Call of Duty: Modern Warfare 2 Campaign Remastered",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 2,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Campaign Remastered uit 2020; niet Modern Warfare II uit 2022.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/call-of-duty-modern-warfare-2-campaign-remastered/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Marvel's Spider-Man",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 3,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Originele PS4-game uit 2018; niet Spider-Man Remastered of Spider-Man 2.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/marvels-spider-man/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Crash Bandicoot N. Sane Trilogy",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 4,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Trilogie met de eerste drie Crash Bandicoot-games.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/crash-bandicoot-n-sane-trilogy/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Grand Theft Auto: The Trilogy - The Definitive Edition",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 5,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Bevat GTA III, Vice City en San Andreas. Gebruiker bevestigt: geen aparte GTA V-aanvraag.",
       "research_sources": [
         {
           "url": "https://www.playstation.com/nl-nl/games/grand-theft-auto-trilogy-definitive-edition/",
-          "finding": "Officiele PS4-/PS5-productpagina; bevat Vice City, GTA III en San Andreas. Geen openbare directe PKG-link gevonden."
-        },
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ],
+      "requested_components": [
+        "Grand Theft Auto III - The Definitive Edition",
+        "Grand Theft Auto: Vice City - The Definitive Edition",
+        "Grand Theft Auto: San Andreas - The Definitive Edition"
+      ],
+      "normalization": "Eerdere losse Vice City-aanvraag samengevoegd met The Trilogy; gebruiker bevestigt expliciet dat GTA V niet gewenst is.",
+      "previous_request_name": "Grand Theft Auto: Vice City – The Definitive Edition",
+      "previous_requested_as": "Gta vice city definitive edition"
+    },
+    {
+      "name": "Assassin's Creed IV: Black Flag",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 6,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Originele PS4-uitgave van Black Flag.",
+      "research_sources": [
         {
-          "url": "https://www.rockstargames.com/newswire/article/25ak3481oa1384/grand-theft-auto-the-trilogy-the-definitive-edition-now-available",
-          "finding": "Officiele publicatie verwijst naar reguliere winkels en de fysieke PS4-uitgave. Geen geautoriseerde publieke PKG-download gevonden."
+          "url": "https://store.playstation.com/en-in/product/EP0001-CUSA00009_00-AC4GAMEPS4000001",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "It Takes Two",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 7,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Volledige game aangevraagd; een gratis Friend Pass is geen vervanging.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/it-takes-two/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "A Way Out",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 8,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Volledige game aangevraagd; een gratis proef-/vriendenversie is geen vervanging.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/a-way-out/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Gang Beasts",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 9,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Volledige PS4-game.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-us/product/UP2154-CUSA04794_00-GANGBEASTSPS04NA",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Far Cry 3 Classic Edition",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 10,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Classic Edition voor PS4; niet de originele PS3-uitgave.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/far-cry-3-classic-edition/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "The Witcher 3: Wild Hunt - Complete Edition",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 11,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Complete Edition voor PS4; niet alleen de basisgame of alleen een PS5-package.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-us/concept/204794",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Outlast",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 12,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Originele Outlast; niet Outlast 2 of The Outlast Trials.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/outlast/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "The Sims 4",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 13,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "De basisgame is gratis via de PlayStation Store. Dit is geen geverifieerde publieke directe PKG-link; uitbreidingen zijn niet automatisch inbegrepen.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/the-sims-4/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ],
+      "official_store_base_game_free": true
+    },
+    {
+      "name": "Stardew Valley",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 14,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-uitgave; een PC-installatiebestand of mod is geen PS4-PKG.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-us/product/UP2456-CUSA06840_00-STARDEW00000SIEA",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Assassin's Creed Origins",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 15,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-basisgame.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-us/product/UP0001-CUSA05855_00-GAMEACEMPIRE0000",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Far Cry 5",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 16,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-basisgame.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-us/product/UP0001-CUSA05904_00-FARCRY5GAME00000",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Star Wars Jedi: Fallen Order",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 17,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Fallen Order; niet Jedi: Survivor.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/star-wars-jedi-fallen-order/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Until Dawn",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 18,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Originele PS4-game uit 2015; niet de PS5/PC-remake.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-us/product/UP9000-CUSA00359_00-UNTILDAWN0000001",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Assassin's Creed: The Ezio Collection",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 19,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Bundelt Assassin's Creed II, Brotherhood en Revelations voor PS4.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-ph/games/assassins-creed-the-ezio-collection/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Spyro Reignited Trilogy",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 20,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-trilogie.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/spyro-reignited-trilogy/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Assassin's Creed Odyssey",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 21,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-basisgame.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/assassins-creed-odyssey/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "South Park: The Fractured But Whole",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 22,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Losse game; onderscheiden van The Stick of Truth.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/south-park-the-fractured-but-whole/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Dying Light 2 Stay Human",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 23,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-versie aangevraagd; een uitsluitend PS5-package is ongeschikt.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/dying-light-2-stay-human/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Dead Island 2",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 24,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Volledige PS4-game aangevraagd; de aangeboden gratis proefversie is geen volledige game.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-us/product/UP2047-CUSA01014_00-DI2MAINSIEAPS400",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Middle-earth: Shadow of Mordor",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 25,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "Shadow of Mordor; niet Shadow of War. Geen GOTY-editie opgegeven.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-sa/product/EP1018-CUSA00053_00-SHADOWOFMORDOR01",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "LEGO Jurassic World",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 26,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-uitgave.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/lego-jurassic-world/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Monopoly Plus",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 27,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-game bestaat; de onderzochte Amerikaanse Store-pagina meldt momenteel Not available for purchase. Dat is geen PKG-bron.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-us/concept/202832",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Heavy Rain",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 28,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-versie; niet de PS3- of PC-versie.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-us/games/heavy-rain/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "South Park: The Stick of Truth",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 29,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-versie; onderscheiden van The Fractured But Whole.",
+      "research_sources": [
+        {
+          "url": "https://www.playstation.com/en-ph/games/south-park-the-stick-of-truth/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "Star Wars Battlefront",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 30,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "EA-game uit 2015 aangenomen; niet Battlefront II of Battlefront Classic Collection.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-us/product/UP0006-CUSA00640_00-BATTLEFRONT00000",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
+        }
+      ]
+    },
+    {
+      "name": "MX vs ATV Legends",
+      "platform": "PS4",
+      "ps4_available": true,
+      "status": "missing",
+      "reason": "Officiele PS4-uitgave gevonden. Geen openbare, geautoriseerde directe PS4-PKG-download aangetroffen in de geraadpleegde officiele product- en uitgeversbronnen.",
+      "needed": "Een rechtmatig te gebruiken, rechtstreeks bereikbare PS4-PKG-bron met bewijs van distributietoestemming. Daarna volgen HTTP-, Range-, header- en metadatacontroles.",
+      "last_attempt": "2026-11-13T18:21:11+00:00",
+      "request_batch": "2026-11-13-spoken-list",
+      "list_order": 31,
+      "package_url": null,
+      "package_verified": false,
+      "min_fw": null,
+      "firmware_compatibility": "Niet gecontroleerd; bestaan van een PS4-uitgave bevestigt geen compatibiliteit met de firmware van de gebruiker.",
+      "notes": "PS4-versie; niet uitsluitend de PS5-versie.",
+      "research_sources": [
+        {
+          "url": "https://store.playstation.com/en-us/concept/10000928/",
+          "finding": "Officiele PlayStation-productvermelding voor deze PS4-titel; geen geverifieerde directe PKG-bron gevonden."
         }
       ]
     }
