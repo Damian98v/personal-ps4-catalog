@@ -20,11 +20,35 @@ jobs:
         run: make image
       - name: Build and validate existing installer
         run: make package
+      - name: Adapt upstream host-only logging test harness
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          log = Path('src/log.cpp')
+          text = log.read_text()
+          old = '        sceKernelDebugOutText(0, fallback);'
+          assert text.count(old) == 1
+          text = text.replace(old, '#ifdef PSGI_HOST\n        fputs(fallback, stdout);\n#else\n' + old + '\n#endif')
+          log.write_text(text)
+          makefile = Path('Makefile')
+          text = makefile.read_text()
+          lines = text.splitlines()
+          for i, line in enumerate(lines):
+              if line.startswith('build/host/http-native-test:'):
+                  lines[i] = line.replace('$(HEADERS)', 'build/host/common/log.o $(HEADERS)')
+                  break
+          else:
+              raise RuntimeError('Upstream native HTTP test target missing')
+          makefile.write_text('\n'.join(lines) + '\n')
+          PY
+          git diff -- src/log.cpp Makefile > dist/host-test-harness.patch
       - name: Run upstream regression tests
         run: |
           docker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/work" \
             -e SDL_VIDEODRIVER=dummy -e PSGI_IN_CONTAINER=1 \
             ps4-games-installer:build make -j2 test
+      - name: Restore exact package source before validation
+        run: git restore --source=HEAD -- src/log.cpp Makefile
       - name: Verify package manifest
         run: make validate
       - name: Include source and build provenance
@@ -34,6 +58,7 @@ jobs:
           printf '%s\n' 'Local build of unmodified e1z0/PS4-Games-Installer source.' \
             'Not an official upstream release. Hardware compatibility must be tested.' \
             'Built with the upstream Dockerfile, pinned OpenOrbis SDK and package validator.' \
+            'The PKG uses unmodified upstream source. host-test-harness.patch only adapts Linux test logging after packaging.' \
             > dist/BUILD-NOTES.txt
           sha256sum dist/*.pkg > dist/SHA256SUMS
       - uses: actions/upload-artifact@v4
