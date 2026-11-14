@@ -3,6 +3,18 @@
 Persoonlijke catalogus voor de bestaande [PS4 Games Installer](https://github.com/e1z0/PS4-Games-Installer).
 De PS4 downloadt toegestane packages rechtstreeks van de oorspronkelijke ontwikkelaar. Deze repository bevat geen PKG-bestanden.
 
+## Privébibliotheek via Google Drive op deze pc
+
+Naast de openbare catalogus hieronder gebruikt de eigenaar een privébibliotheek op Google Drive. Rclone geeft de bestanden tijdens downloaden/installeren via de pc door aan de PS4. De volledige Apollo-testdownload is met de ontwikkelaarschecksum gecontroleerd; de eigenaar heeft vervolgens een geslaagde installatie op zijn PS4 gemeld. Andere packages vereisen hun eigen installatieproef.
+
+De blijvende, ontdubbelde speellijst en downloadinventaris staan lokaal in `D:\PS4-bibliotheek\games-overzicht.json` en `games-overzicht.txt`, met een privékopie in de Drive-map `PS4-Library`. Basisgames, updates, DLC en editievoorkeuren worden apart bijgehouden. De privé-package-index is `%LOCALAPPDATA%\PS4Drive\library.json`; de startknop leest deze volledige index opnieuw, ook nadat lokale PKG-kopieën op verzoek zijn opgeruimd.
+
+De start-/stopknoppen staan op het bureaublad in `PS4 Google Drive`. De juiste lokale Games JSON URL staat in `%LOCALAPPDATA%\PS4Drive\PS4-URL.txt`. De pc blijft aan tijdens downloaden/installeren. Google gebruikt een eigen client met beperkte `drive.file`-toegang; de Google-app staat voorlopig in testmodus, wat opnieuw aanmelden kan vereisen. Alleen via deze koppeling aangemaakte Drive-bestanden zijn voor deze beperkte toegang zichtbaar.
+
+De persoonlijke inventaris, backups en aanmeldgegevens worden privé bewaard. Deze repository bevat de openbare ontwikkelaarscatalogus en projectdocumentatie.
+
+## Openbare ontwikkelaarscatalogus
+
 **Games JSON URL:**
 
 ```text
